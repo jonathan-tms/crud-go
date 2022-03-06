@@ -18,11 +18,11 @@ type article struct {
 }
 
 func dbConn() (db *sql.DB) {
-	dbDriver := "mysql"
-	dbUser := "admin"
-	dbPass := "-xm((e5eMQ*8mLYR"
-	dbName := "articles"
-	hostDb := "database-1.ckk6qzmolgec.us-east-1.rds.amazonaws.com:3306"
+	dbDriver := ""
+	dbUser := ""
+	dbPass := ""
+	dbName := ""
+	hostDb := ""
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@tcp("+hostDb+")/"+dbName)
 	// db, err := sql.Open("mysql", "<username>:<pw>@tcp(<HOST>:<port>)/<dbname>")
 	if err != nil {
